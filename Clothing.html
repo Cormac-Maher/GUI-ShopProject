@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-
     <title>GUI Sports Shop</title>
     <style>
         body {
@@ -43,66 +42,65 @@
         }
 
         footer {
-      background: #222;
-      color: white;
-      padding: 15px;
-      text-align: center;
-      margin-top: 100px;
-    }
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 100px;
+        }
 
-    .container {
-      margin: 10px;
-      padding: 5px;
-    }
+        .container {
+            margin: 10px;
+            padding: 5px;
+        }
 
-    .container h1{
-        font-size: 70px;
-    }
+        .container h1{
+            font-size: 70px;
+        }
 
-    .products {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 30px;
-    }
+        .products {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 30px;
+        }
 
-    .box {
-      background: white;
-      border-radius: 10px;
-    }
+        .box {
+            background: white;
+            border-radius: 10px;
+        }
 
-    .box img {
-      width: 150;
-      height: 200px;
-     
-    }
+        .box img {
+            width: 150px;
+            height: 200px;
+        }
 
-    .info {
-      padding: 1rem;
-      text-align: center;
-    }
+        .info {
+            padding: 1rem;
+            text-align: center;
+        }
 
-    .info h3{
-      margin-bottom: 8px;
-    }
+        .info h3{
+            margin-bottom: 8px;
+        }
 
-    .info p {
-      margin-bottom: 5px;
-      font-size: 15px;
-      color: gray;
-    }
+        .info p {
+            margin-bottom: 5px;
+            font-size: 15px;
+            color: gray;
+        }
 
-    .price {
-      font-weight: bold;
-      color: green;
-      margin-bottom: 10px;
-    }
+        .price {
+            font-weight: bold;
+            color: green;
+            margin-bottom: 10px;
+        }
 
-    .button {
-      background: black;
-      color: white;
-      padding: 8px 16px;
-      border-radius: 5px;
-    }    
+        .button {
+            background: black;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
 
     </style>
 </head>
@@ -117,6 +115,7 @@
             <a href="Cart.html">Cart</a>
         </div>
     </nav>
+
     <h1>The GUI Sports Shop</h1>
     
     <div class="container">
@@ -124,109 +123,110 @@
     
         <div class="products">
           <div class="box">
-            <img src="redShorts.jpg">
+            <img src="redShorts.jpg" alt="Red Shorts">
             <div class="info">
               <h3>Red Shorts</h3>
               <p>Comes in 3 sizes</p>
               <div class="price">€10</div>
-              <button class="button">Add to Cart</button>
+              <button class="button" onclick="addToCart('Red Shorts', 10)">Add to Cart</button>
             </div>
           </div>
 
-            <div class="box">
-              <img src="blackShorts.jpg">
-              <div class="info">
-                <h3>Black Shorts</h3>
-                <p>Comes in 3 sizes</p>
-                <div class="price">€10</div>
-                <button class="button">Add to Cart</button>
-              </div>
+          <div class="box">
+            <img src="blackShorts.jpg" alt="Black Shorts">
+            <div class="info">
+              <h3>Black Shorts</h3>
+              <p>Comes in 3 sizes</p>
+              <div class="price">€10</div>
+              <button class="button" onclick="addToCart('Black Shorts', 10)">Add to Cart</button>
             </div>
+          </div>
 
-            <div class="box">
-              <img src="blueShorts.jpg">
-              <div class="info">
-                <h3>Blue Shorts</h3>
-                <p>Comes in 3 sizes</p>
-                <div class="price">€10</div>
-                <button class="button">Add to Cart</button>
-              </div>
+          <div class="box">
+            <img src="blueShorts.jpg" alt="Blue Shorts">
+            <div class="info">
+              <h3>Blue Shorts</h3>
+              <p>Comes in 3 sizes</p>
+              <div class="price">€10</div>
+              <button class="button" onclick="addToCart('Blue Shorts', 10)">Add to Cart</button>
             </div>
-                
-            <div class="box">
-              <img src="tankGreen.jpg">
-              <div class="info">
-                <h3>Green Tank Top</h3>
-                <p>Comes in 2 sizes</p>
-                <div class="price">€8</div>
-                <button class="button">Add to Cart</button>
-              </div>
-            </div>
-               
-            <div class="box">
-              <img src="tantBlack.jpg">
-              <div class="info">
-                <h3>Black Tank Top</h3>
-                <p>Comes in 2 sizes</p>
-                <div class="price">€8</div>
-                <button class="button">Add to Cart</button>
-              </div>
-            </div>
-               
-            <div class="box">
-              <img src="tankWhite.jpg">
-              <div class="info">
-                <h3>White Tank Top</h3>
-                <p>Comes in 2 sizes</p>
-                <div class="price">€8</div>
-                <button class="button">Add to Cart</button>
-              </div>
-            </div>
-                
-            <div class="box">
-              <img src="shirtBlue.jpg">
-              <div class="info">
-                <h3>Blue T-Shirt</h3>
-                <p>Comes in 3 sizes</p>
-                <div class="price">€15</div>
-                <button class="button">Add to Cart</button>
-              </div>
-            </div>
+          </div>
           
-            <div class="box">
-              <img src="shirtGreen.jpg">
-              <div class="info">
-                <h3>Green T-Shirt</h3>
-                <p>Comes in 3 sizes</p>
-                <div class="price">€15</div>
-                <button class="button">Add to Cart</button>
-              </div>
+          <div class="box">
+            <img src="tankGreen.jpg" alt="Green Tank Top">
+            <div class="info">
+              <h3>Green Tank Top</h3>
+              <p>Comes in 2 sizes</p>
+              <div class="price">€8</div>
+              <button class="button" onclick="addToCart('Green Tank Top', 8)">Add to Cart</button>
             </div>
+          </div>
+
+          <div class="box">
+            <img src="tantBlack.jpg" alt="Black Tank Top">
+            <div class="info">
+              <h3>Black Tank Top</h3>
+              <p>Comes in 2 sizes</p>
+              <div class="price">€8</div>
+              <button class="button" onclick="addToCart('Black Tank Top', 8)">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="tankWhite.jpg" alt="White Tank Top">
+            <div class="info">
+              <h3>White Tank Top</h3>
+              <p>Comes in 2 sizes</p>
+              <div class="price">€8</div>
+              <button class="button" onclick="addToCart('White Tank Top', 8)">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="shirtBlue.jpg" alt="Blue T-Shirt">
+            <div class="info">
+              <h3>Blue T-Shirt</h3>
+              <p>Comes in 3 sizes</p>
+              <div class="price">€15</div>
+              <button class="button" onclick="addToCart('Blue T-Shirt', 15)">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="shirtGreen.jpg" alt="Green T-Shirt">
+            <div class="info">
+              <h3>Green T-Shirt</h3>
+              <p>Comes in 3 sizes</p>
+              <div class="price">€15</div>
+              <button class="button" onclick="addToCart('Green T-Shirt', 15)">Add to Cart</button>
+            </div>
+          </div>
     
-            <div class="box">
-              <img src="shirtBlack.png">
-              <div class="info">
-                <h3>Black T-Shirt</h3>
-                <p>Comes in 3 sizes</p>
-                <div class="price">€15</div>
-                <button class="button">Add to Cart</button>
-              </div>
+          <div class="box">
+            <img src="shirtBlack.png" alt="Black T-Shirt">
+            <div class="info">
+              <h3>Black T-Shirt</h3>
+              <p>Comes in 3 sizes</p>
+              <div class="price">€15</div>
+              <button class="button" onclick="addToCart('Black T-Shirt', 15)">Add to Cart</button>
             </div>
+          </div>
         </div>
       </div>
 
     <script>
-
-
-
-
-
-
+        // Function to add items to the cart
+        function addToCart(productName, price) {
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];
+            cart.push({ productName, price });
+            localStorage.setItem('cart', JSON.stringify(cart));
+            alert(`${productName} added to cart.`);
+        }
     </script>
-    
-  <footer>
-    The GUI Sports Shop. 
-  </footer>
+
+    <footer>
+        The GUI Sports Shop. 
+    </footer>
     
 </body>
 </html>
