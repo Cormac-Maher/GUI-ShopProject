@@ -5,7 +5,7 @@
     <title>GUI Sports Shop</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif;             /* Cormac css same as Clothing and Accessories               */
             text-align: center;
             margin: 0;
             padding: 20px;
@@ -109,7 +109,7 @@
         <div class="links">
             <a href="index.html">Home</a>
             <a href="Clothing.html">Clothing</a> 
-            <a href="Supplements.html">Supplements</a>
+            <a href="Supplements.html">Supplements</a>          <!-- Cormac Nav bar same as other pages-->
             <a href="Accessories.html">Accessories</a>        
             <a href="Cart.html">Cart</a>
         </div>
@@ -122,7 +122,7 @@
     
         <div class="products">
             <div class="box">
-                <img src="gymbag.png">
+                <img src="gymbag.png">                            <!-- Cormac Div layout and styling same as the other pages-->
                 <div class="info">
                     <h3>Gym Bag</h3>
                     <p>Holds everything you need</p>
@@ -184,11 +184,11 @@
     </div>
 
     <script>
-        function addToCart(productName, price) {
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cart.push({ productName, price });
-            localStorage.setItem('cart', JSON.stringify(cart));
-            alert(`${productName} added to cart.`);
+        function addToCart(productName, price) {                            // Daniel - the function takes 2 variables
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];   // Daniel -This checks if there is anything in the cart before 
+            cart.push({ productName, price });                             // Daniel -Adds the item to the cart
+            localStorage.setItem('cart', JSON.stringify(cart));            // Daniel - Saves it into local storage
+            alert(`${productName} added to cart.`);                        // Daniel - Alerts the user
         }
     </script>
     
