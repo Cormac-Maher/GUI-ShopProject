@@ -187,11 +187,11 @@
     </div>
 
     <script>
-        function addToCart(productName, price) {
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];
-            cart.push({ productName, price });
-            localStorage.setItem('cart', JSON.stringify(cart));
-            alert(`${productName} added to cart.`);
+        function addToCart(productName, price) {                            // Daniel - the function takes 2 variables
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];   // Daniel -This checks if there is anything in the cart before 
+            cart.push({ productName, price });                             // Daniel -Adds the item to the cart
+            localStorage.setItem('cart', JSON.stringify(cart));            // Daniel - Saves it into local storage
+            alert(`${productName} added to cart.`);                        // Daniel - Alerts the user
         }
     </script>
     
