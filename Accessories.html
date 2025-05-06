@@ -5,7 +5,7 @@
     <title>GUI Sports Shop</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, sans-serif;             
             text-align: center;
             margin: 0;
             padding: 20px;
@@ -110,30 +110,30 @@
         <div class="links">
             <a href="index.html">Home</a>
             <a href="Clothing.html">Clothing</a> 
-            <a href="Supplements.html">Supplements</a>
+            <a href="Supplements.html">Supplements</a>          <!-- Cormac This is the navigation bar to switch between pages -->
             <a href="Accessories.html">Accessories</a>        
             <a href="Cart.html">Cart</a>
         </div>
     </nav>
 
-    <h1>The GUI Sports Shop</h1>
+    <h1>The GUI Sports Shop</h1>          <!-- Cormac Title -->
     
     <div class="container">
         <h1>Supplements</h1>
     
-        <div class="products">
+        <div class="products">          <!-- Cormac I created a container with a grid and a box for each product-->
           <div class="box">
-            <img src="gymbag.png" alt="Gym Bag">
+            <img src="gymbag.png" alt="Gym Bag">          <!-- Cormac Each div is given a class so it can be styled with css-->
             <div class="info">
               <h3>Gym Bag</h3>
               <p>Holds everything you need</p>
               <div class="price">€25</div>
-              <button class="button" onclick="addToCart('Gym Bag', 25)">Add to Cart</button>
+              <button class="button" onclick="addToCart('Gym Bag', 25)">Add to Cart</button>          <!-- Cormac Adds to the card on button click-->
             </div>
           </div>
     
           <div class="box">
-            <img src="straps.png" alt="Lifting Straps">
+            <img src="straps.png" alt="Lifting Straps">          <!-- Cormac There is a similar div for each item-->
             <div class="info">
               <h3>Lifting Straps</h3>
               <p>For lifting in the gym</p>
@@ -143,7 +143,7 @@
           </div>
 
           <div class="box">
-            <img src="bottle.jpg" alt="2L Water Bottle">
+            <img src="bottle.jpg" alt="Water Bottle">
             <div class="info">
               <h3>2L Water Bottle</h3>
               <p>For your Hydration Needs</p>
@@ -187,7 +187,6 @@
     </div>
 
     <script>
-        // Function to add items to the cart
         function addToCart(productName, price) {
             const cart = JSON.parse(localStorage.getItem('cart')) || [];
             cart.push({ productName, price });
