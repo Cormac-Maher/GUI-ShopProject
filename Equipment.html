@@ -9,7 +9,7 @@
             text-align: center;
             margin: 0;
             padding: 20px;
-            background-color: skyblue;          /*Cormac We chose a light background colour     */
+            background-color: skyblue;          
         }
 
         body h1{
@@ -19,7 +19,7 @@
         .navbar {
             display: flex;
             justify-content: center;            
-            align-items: center;          /*Cormac Item is the nav bar stay in the middle     */
+            align-items: center;          
             background-color: black;
             padding: 15px 20px;
         }
@@ -34,7 +34,7 @@
             padding: 15px 15px;
         }
         .navbar a:hover {
-            background-color: #555;          /*Cormac  Navbar chages colour when you hover over it    */
+            background-color: #555;          
             border-radius: 5px;
         }
         .links {
@@ -42,7 +42,7 @@
         }
 
         footer {
-            background: #222;          /*Cormac Styles the footer at the bottom */
+            background: #222;          
             color: white;
             padding: 15px;
             text-align: center;
@@ -60,17 +60,17 @@
 
         .products {
             display: grid;
-            grid-template-columns: 1fr 1fr 1fr;          /*Cormac The products will display 3 at a time     */
+            grid-template-columns: 1fr 1fr 1fr;          
             gap: 30px;
         }
 
         .box {
-            background: white;          /*Cormac  These style the div boxes for each product    */
+            background: white;          
             border-radius: 10px;
         }
 
         .box img {
-            width: 150px;
+            width: auto;
             height: 200px;
         }
 
@@ -96,7 +96,7 @@
         }
 
         .button {
-            background: black;          /* Cormac This Styles the buttons  */
+            background: black;          
             color: white;
             padding: 8px 16px;
             border-radius: 5px;
@@ -109,7 +109,7 @@
 
     <nav class="navbar">
         <div class="links">
-            <a href="index.html">Home</a>          <!-- Cormac the navigation bar to switch between pages -->
+            <a href="index.html">Home</a>          
             <a href="Clothing.html">Clothing</a> 
             <a href="Supplements.html">Supplements</a>
             <a href="Accessories.html">Accessories</a>  
@@ -121,107 +121,78 @@
     <h1>The GUI Sports Shop</h1>
     
     <div class="container">
-        <h1>Clothes</h1>
+        <h1>Equipment</h1>
     
         <div class="products">
           <div class="box">
-            <img src="redShorts.jpg" alt="Red Shorts">
+            <img src="Dumbells.jpg" alt="Dumbbells">
             <div class="info">
-              <h3>Red Shorts</h3>
-              <p>Comes in 3 sizes</p>
-              <div class="price">€10</div>
-              <button class="button" onclick="addToCart('Red Shorts', 10)">Add to Cart</button>          <!-- Cormac created a container with a grid and a box for each product-->
+              <h3>Adjustable dummbells</h3>
+              <p>5kg - 30kg</p>
+              <div class="price">€60</div>
+              <button class="button" onclick="addToCart('Dumbbells', 60)">Add to Cart</button>          
             </div>
           </div>
 
           <div class="box">
-            <img src="blackShorts.jpg" alt="Black Shorts">          <!-- Cormac Each div is given a class so it can be styled with css-->
+            <img src="bench.webp" alt="Bench">          
             <div class="info">
-              <h3>Black Shorts</h3>
-              <p>Comes in 3 sizes</p>
-              <div class="price">€10</div>
-              <button class="button" onclick="addToCart('Black Shorts', 10)">Add to Cart</button>          <!-- Cormac ruuns add to cart function on button click-->
+              <h3>Bench</h3>
+              <p>Adjustable 190 - 70 degrees</p>
+              <div class="price">€100</div>
+              <button class="button" onclick="addToCart('Bench', 100)">Add to Cart</button>          
             </div>
           </div>
 
           <div class="box">
-            <img src="blueShorts.jpg" alt="Blue Shorts">
+            <img src="Barbell.webp" alt="Barbell">
             <div class="info">
-              <h3>Blue Shorts</h3>
-              <p>Comes in 3 sizes</p>
-              <div class="price">€10</div>
-              <button class="button" onclick="addToCart('Blue Shorts', 10)">Add to Cart</button>
+              <h3>Barbell bar</h3>
+              <p>15kg olimpic barbell</p>
+              <div class="price">€100</div>
+              <button class="button" onclick="addToCart('Barbell', 100)">Add to Cart</button>
             </div>
           </div>
           
           <div class="box">
-            <img src="tankGreen.jpg" alt="Green Tank Top">
+            <img src="Plates.png" alt="plates">
             <div class="info">
-              <h3>Green Tank Top</h3>
-              <p>Comes in 2 sizes</p>
-              <div class="price">€8</div>
-              <button class="button" onclick="addToCart('Green Tank Top', 8)">Add to Cart</button>
+              <h3>barbell plates</h3>
+              <p>6 10kg barbell plates</p>
+              <div class="price">€150</div>
+              <button class="button" onclick="addToCart('plates', 150)">Add to Cart</button>
             </div>
           </div>
 
           <div class="box">
-            <img src="tantBlack.jpg" alt="Black Tank Top">
+            <img src="Squat rack.jpg" alt="Squat Rack">
             <div class="info">
-              <h3>Black Tank Top</h3>
-              <p>Comes in 2 sizes</p>
-              <div class="price">€8</div>
-              <button class="button" onclick="addToCart('Black Tank Top', 8)">Add to Cart</button>
+              <h3>Squat Rack</h3>
+              <p>Barbel Squat and bench rack</p>
+              <div class="price">€75</div>
+              <button class="button" onclick="addToCart('Squat Rack', 75)">Add to Cart</button>
             </div>
           </div>
 
           <div class="box">
-            <img src="tankWhite.jpg" alt="White Tank Top">
+            <img src="clips.jpg" alt="clips">
             <div class="info">
-              <h3>White Tank Top</h3>
-              <p>Comes in 2 sizes</p>
-              <div class="price">€8</div>
-              <button class="button" onclick="addToCart('White Tank Top', 8)">Add to Cart</button>
+              <h3>Barbell clips</h3>
+              <p>Fits all barbell sizes</p>
+              <div class="price">€10</div>
+              <button class="button" onclick="addToCart('clips', 10)">Add to Cart</button>
             </div>
           </div>
 
-          <div class="box">
-            <img src="shirtBlue.jpg" alt="Blue T-Shirt">
-            <div class="info">
-              <h3>Blue T-Shirt</h3>
-              <p>Comes in 3 sizes</p>
-              <div class="price">€15</div>
-              <button class="button" onclick="addToCart('Blue T-Shirt', 15)">Add to Cart</button>
-            </div>
-          </div>
-
-          <div class="box">
-            <img src="shirtGreen.jpg" alt="Green T-Shirt">
-            <div class="info">
-              <h3>Green T-Shirt</h3>
-              <p>Comes in 3 sizes</p>
-              <div class="price">€15</div>
-              <button class="button" onclick="addToCart('Green T-Shirt', 15)">Add to Cart</button>
-            </div>
-          </div>
-    
-          <div class="box">
-            <img src="shirtBlack.png" alt="Black T-Shirt">
-            <div class="info">
-              <h3>Black T-Shirt</h3>
-              <p>Comes in 3 sizes</p>
-              <div class="price">€15</div>
-              <button class="button" onclick="addToCart('Black T-Shirt', 15)">Add to Cart</button>
-            </div>
-          </div>
         </div>
       </div>
 
     <script>
-        function addToCart(productName, price) {                            // Daniel - the function takes 2 variables
-            const cart = JSON.parse(localStorage.getItem('cart')) || [];   // Daniel -This checks if there is anything in the cart before 
-            cart.push({ productName, price });                             // Daniel -Adds the item to the cart
-            localStorage.setItem('cart', JSON.stringify(cart));            // Daniel - Saves it into local storage
-            alert(`${productName} added to cart.`);                        // Daniel - Alerts the user
+        function addToCart(productName, price) {                            
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];    
+            cart.push({ productName, price });                             
+            localStorage.setItem('cart', JSON.stringify(cart));            
+            alert(`${productName} added to cart.`);                        
         }
     </script>
 
