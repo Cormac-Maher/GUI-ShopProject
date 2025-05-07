@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GUI Sports Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;             
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: skyblue;          /*Cormac We chose a light background colour     */
+        }
+
+        body h1{
+            font-size: 100px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;            
+            align-items: center;          /*Cormac Item is the nav bar stay in the middle     */
+            background-color: black;
+            padding: 15px 20px;
+        }
+
+        .navbar h1{
+            color: white;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 15px;
+        }
+        .navbar a:hover {
+            background-color: #555;          /*Cormac  Navbar chages colour when you hover over it    */
+            border-radius: 5px;
+        }
+        .links {
+            gap: 15px;
+        }
+
+        footer {
+            background: #222;          /*Cormac Styles the footer at the bottom */
+            color: white;
+            padding: 15px;
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .container {
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .container h1{
+            font-size: 70px;
+        }
+
+        .products {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;          /*Cormac The products will display 3 at a time     */
+            gap: 30px;
+        }
+
+        .box {
+            background: white;          /*Cormac  These style the div boxes for each product    */
+            border-radius: 10px;
+        }
+
+        .box img {
+            width: 150px;
+            height: 200px;
+        }
+
+        .info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .info h3{
+            margin-bottom: 8px;
+        }
+
+        .info p {
+            margin-bottom: 5px;
+            font-size: 15px;
+            color: gray;
+        }
+
+        .price {
+            font-weight: bold;
+            color: green;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            background: black;          /* Cormac This Styles the buttons  */
+            color: white;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="links">
+            <a href="index.html">Home</a>          <!-- Cormac the navigation bar to switch between pages -->
+            <a href="Clothing.html">Clothing</a> 
+            <a href="Supplements.html">Supplements</a>
+            <a href="Accessories.html">Accessories</a>  
+            <a href="Equipment.html">Equipment</a>      
+            <a href="Cart.html">Cart</a>
+        </div>
+    </nav>
+
+    <h1>The GUI Sports Shop</h1>
+    
+    <div class="container">
+        <h1>Clothes</h1>
+    
+        <div class="products">
+          <div class="box">
+            <img src="redShorts.jpg" alt="Red Shorts">
+            <div class="info">
+              <h3>Red Shorts</h3>
+              <p>Comes in 3 sizes</p>
+              <div class="price">€10</div>
+              <button class="button" onclick="addToCart('Red Shorts', 10)">Add to Cart</button>          <!-- Cormac created a container with a grid and a box for each product-->
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="blackShorts.jpg" alt="Black Shorts">          <!-- Cormac Each div is given a class so it can be styled with css-->
+            <div class="info">
+              <h3>Black Shorts</h3>
+              <p>Comes in 3 sizes</p>
+              <div class="price">€10</div>
+              <button class="button" onclick="addToCart('Black Shorts', 10)">Add to Cart</button>          <!-- Cormac ruuns add to cart function on button click-->
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="blueShorts.jpg" alt="Blue Shorts">
+            <div class="info">
+              <h3>Blue Shorts</h3>
+              <p>Comes in 3 sizes</p>
+              <div class="price">€10</div>
+              <button class="button" onclick="addToCart('Blue Shorts', 10)">Add to Cart</button>
+            </div>
+          </div>
+          
+          <div class="box">
+            <img src="tankGreen.jpg" alt="Green Tank Top">
+            <div class="info">
+              <h3>Green Tank Top</h3>
+              <p>Comes in 2 sizes</p>
+              <div class="price">€8</div>
+              <button class="button" onclick="addToCart('Green Tank Top', 8)">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="tantBlack.jpg" alt="Black Tank Top">
+            <div class="info">
+              <h3>Black Tank Top</h3>
+              <p>Comes in 2 sizes</p>
+              <div class="price">€8</div>
+              <button class="button" onclick="addToCart('Black Tank Top', 8)">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="tankWhite.jpg" alt="White Tank Top">
+            <div class="info">
+              <h3>White Tank Top</h3>
+              <p>Comes in 2 sizes</p>
+              <div class="price">€8</div>
+              <button class="button" onclick="addToCart('White Tank Top', 8)">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="shirtBlue.jpg" alt="Blue T-Shirt">
+            <div class="info">
+              <h3>Blue T-Shirt</h3>
+              <p>Comes in 3 sizes</p>
+              <div class="price">€15</div>
+              <button class="button" onclick="addToCart('Blue T-Shirt', 15)">Add to Cart</button>
+            </div>
+          </div>
+
+          <div class="box">
+            <img src="shirtGreen.jpg" alt="Green T-Shirt">
+            <div class="info">
+              <h3>Green T-Shirt</h3>
+              <p>Comes in 3 sizes</p>
+              <div class="price">€15</div>
+              <button class="button" onclick="addToCart('Green T-Shirt', 15)">Add to Cart</button>
+            </div>
+          </div>
+    
+          <div class="box">
+            <img src="shirtBlack.png" alt="Black T-Shirt">
+            <div class="info">
+              <h3>Black T-Shirt</h3>
+              <p>Comes in 3 sizes</p>
+              <div class="price">€15</div>
+              <button class="button" onclick="addToCart('Black T-Shirt', 15)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        function addToCart(productName, price) {                            // Daniel - the function takes 2 variables
+            const cart = JSON.parse(localStorage.getItem('cart')) || [];   // Daniel -This checks if there is anything in the cart before 
+            cart.push({ productName, price });                             // Daniel -Adds the item to the cart
+            localStorage.setItem('cart', JSON.stringify(cart));            // Daniel - Saves it into local storage
+            alert(`${productName} added to cart.`);                        // Daniel - Alerts the user
+        }
+    </script>
+
+    <footer>
+        The GUI Sports Shop. 
+    </footer>
+    
+</body>
+</html>
