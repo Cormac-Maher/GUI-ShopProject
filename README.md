@@ -2,7 +2,7 @@ GUI Sports Shop
 A static e-commerce website for a sports and fitness shop, built with HTML, CSS, and vanilla JavaScript. Browse products across four categories, add items to a cart stored in localStorage, and complete a checkout with coupon support.
 
 
-Features
+# Features
 
 Product catalogue across 4 categories, displayed in a responsive 3-column grid
 Add to Cart — items are saved to localStorage and persist between pages
